@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: Delius, cursive;
+}
+
+input, button {
+    font-size: 20px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(21, 196, 18);
+    color: white;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 2px solid rgb(21, 196, 18);
+    border-radius: 30px;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: rgb(21, 196, 18);
+}
+
+.input_section > form > .input {
+    margin: 8px 10px;
+    border-radius: 10px;
+}
+
+.input_section > form > button {
+    background-color: rgb(21, 196, 18);
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.input_section > form > .input > label {
+    color: rgb(21, 196, 18);
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: rgb(13, 17, 97);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#inputBookTitle{
+    margin-top: 4px;
+    border-radius: 20px;
+}
+
+#inputBookAuthor{
+    margin-top: 4px;
+    border-radius: 20px;
+}
+
+#inputBookYear{
+    margin-top: 4px;
+    border-radius: 20px;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 2px solid rgb(187, 7, 28);
+    padding: 16px;
+    border-radius: 30px;
+    background-color: rgb(187, 7, 28);
+}
+
+.book_shelf > h2 {
+    color: rgb(21, 196, 18);
+    background-color: white;
+    padding: 10px 30px 10px 30px;
+    margin: -15px -15px;
+    border-radius: 30px 30px;
+}
+
+.book_shelf > .book_list {
+    padding: 10px;
+}
+
+.book_shelf > .book_list > .book_item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shadow {
+    border-radius: 20px;
+    border-color: aquamarine;
+    box-shadow: 0 5px 10px rgba(80, 14, 14, 0.984), 0 15px 30px rgba(166, 173, 201, .2);
+}
+
+.check-button {
+    background: url('assets/accept.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: 0px;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('assets/fill/accept.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    background: url('assets/recycle.svg');
+    background-size: contain;
+    color: darkred;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('assets/fill/delete.svg');
+    background-size: contain;
+    color: darkred;
+}
+
+.undo-button {
+    background: url('assets/swap.svg');
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('assets/fill/swap.svg');
+    background-size: contain;
+}
+
