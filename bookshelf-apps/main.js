@@ -136,10 +136,10 @@ function addBook(){
     const completedBook = document.getElementById('inputBookIsComplete').checked;
 
     if(completedBook){
-        const bookItem = generateBookObject(getID, titleOfBook, authorOfBook, yearOfBook, true);
+        const bookItem = generateBookObject(getID, titleOfBook, authorOfBook, parseInt(yearOfBook), true);
         bookShelf.push(bookItem);
     } else {
-        const bookItem = generateBookObject(getID, titleOfBook, authorOfBook, yearOfBook, false);
+        const bookItem = generateBookObject(getID, titleOfBook, authorOfBook, parseInt(yearOfBook), false);
         bookShelf.push(bookItem);
     }
 
